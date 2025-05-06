@@ -2,51 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notes From a B. Tech Brain</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Notes From a B. Tech Brain – Home</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #1e293b;
+    }
+    header {
+      background: linear-gradient(90deg, #6366f1, #3b82f6);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #e0e7ff;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section-link {
+      background-color: #fff;
+      padding: 30px 25px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-decoration: none;
+      color: #1e293b;
+      display: block;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .section-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+    .section-link h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #3b82f6;
+    }
+    .section-link p {
+      margin-top: 8px;
+      color: #475569;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #e2e8f0;
+      font-size: 0.9rem;
+      color: #64748b;
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-blue-700 to-indigo-700 text-white p-6 shadow-md">
-    <div class="max-w-5xl mx-auto">
-      <h1 class="text-4xl font-extrabold">🧠 Notes From a B. Tech Brain</h1>
-      <p class="text-sm text-blue-200 mt-1">Insights · Tech · World News</p>
-    </div>
+<body>
+  <header>
+    <h1>Notes From a B. Tech Brain</h1>
+    <p>Your weekly dose of insights, tech trends & global updates</p>
   </header>
 
-  <!-- Main content -->
-  <main class="max-w-5xl mx-auto p-6 space-y-8">
-    <!-- Article 1 -->
-    <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200 hover:border-blue-500">
-     <a href="friday-insights.html"> <h2 class="text-2xl font-semibold text-blue-700">Friday Insights: Emotional Intelligence</h2>
-      <p class="text-gray-600 mt-2">Let’s talk about how EI shapes leadership, personal growth, and why it’s underrated in tech...</p>
-    </a></article>
+  <main>
+    <a class="section-link" href="friday-insights.html">
+      <h2>📘 Friday Insights</h2>
+      <p>Explore soft skills, personal growth, and reflections from a student’s mind.</p>
+    </a>
 
-    <!-- Article 2 -->
-    <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200 hover:border-indigo-500">
-        <a href="tech-pulse.html"> <h2 class="text-2xl font-semibold text-indigo-700">Tech Pulse: AI & Internships</h2>
-      <p class="text-gray-600 mt-2">What’s legit and what’s hype in 2025 — a no-nonsense view of trending tools, reels, and side hustles...</p>
-    </a></article>
+    <a class="section-link" href="tech-pulse.html">
+      <h2>⚙️ Tech Pulse</h2>
+      <p>Breakdowns of trending tech, real-world dev talk, and what's worth learning.</p>
+    </a>
 
-    <!-- Article 3 -->
-    <article class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all border border-gray-200 hover:border-green-500">
-        <a href="world-news.html"><h2 class="text-2xl font-semibold text-green-700">World News: Global Highlights</h2>
-      <p class="text-gray-600 mt-2">Your weekend roundup from politics, economy, science, and more — all student-friendly.</p>
-    </a></article>
+    <a class="section-link" href="world-news.html">
+      <h2>🌍 World News</h2>
+      <p>Fast, digestible, no-fluff global headlines for busy brains.</p>
+    </a>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-100 text-center p-4 text-sm text-gray-500 mt-12">
-    © 2025 Notes From a B. Tech Brain. Made with ☕ by a curious coder.
+  <footer>
+    © 2025 Notes From a B. Tech Brain. Built with curiosity & coffee ☕
   </footer>
-
 </body>
 </html>
